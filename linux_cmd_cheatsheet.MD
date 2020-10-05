@@ -121,3 +121,12 @@ permission mechanism for file system
   show or set the system's host name
 - ## [pwd](https://ss64.com/bash/pwd.html)
   Print Working Directory
+- ## [sed](https://ss64.com/bash/sed.html)
+  Stream editor ( **_check `$ info sed` for other usage_** )
+  - substitute `$ sed 's/original/replacement/g' file`  
+    `/g` = global flag
+    delete empty lines `$ sed '/^.$/d' file` (might not work)
+  - use --in-place (or -i) flag to save the file `$ sed -i 's/original/replacement/g' file`
+  - can also be written as
+    - delete by line numbers: `$ sed '20d' file` and `$ sed '20,25d' file`
+    - delete by regex `$ sed '/^foobar/d' file`
