@@ -92,11 +92,26 @@ permission mechanism for file system
   - word count `$ wc -w file`
   - byte count `$ wc -b file`
 
+## Combine and split
+
+- ## [cat](https://www.ss64.com/bash/cat.html)
+  concatenate `$ cat file1 file2 file3 > bundle`
+- ## [split](https://www.ss64.com/bash/split.html)
+  split file by 10 lines each `$ split -l 10 parentFile childFile`
+
 ## Zip and compression
 
 - ## [tar](https://www.ss64.com/bash/tar.html)
+  just put multiple files in one container/folder
+  - put everything here in _file.tar_ `$ tar cvf file.tar .`  
+    cvf is --create --label --file
+  - extract everything `$ tar xvf file.tar`
 - ## [gzip](https://www.ss64.com/bash/gzip.html)
-- ## [gzip](https://www.ss64.com/bash/gzip.html)
+  zip files, or preferably, zip a tar
+  - zip file `$ gzip file.tar`
+  - unzip file `$ gunzip file.tar` or `$ gzip -d file.tar`
+- ## [bzip](https://www.ss64.com/bash/bzip.html)
+  use gzip instead
 
 ## Others
 
