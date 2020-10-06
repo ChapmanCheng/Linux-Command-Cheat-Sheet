@@ -131,3 +131,15 @@
   | >         | is less than or equal to, in ASCII alphabetical order |
   | -z        | is null or zero length                                |
   | -n        | is not null                                           |
+
+- ## Alias
+
+  set alias `$ alias ph="pwd; hostname"`  
+  unset alias `$ unalias ph`
+
+  to create permanent alias, set in these files
+
+  - user alias  
+    `/home/user/.bashrc`
+  - global alias  
+    `/etc/bashrc/`
