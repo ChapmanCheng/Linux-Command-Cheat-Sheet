@@ -3,6 +3,7 @@
 ## Show Files
 
 - ## [cat](https://www.ss64.com/bash/cat.html)
+- ## [less](https://www.ss64.com/bash/less.html)
 - ## [head](https://www.ss64.com/bash/head.html)
   to show 5 lines `head -5` or `head -n 5`
 - ## [tail](https://www.ss64.com/bash/tail.html)
@@ -63,6 +64,18 @@
 ## Combine and split
 
 - ## [cat](https://www.ss64.com/bash/cat.html)
-  concatenate `$ cat file1 file2 file3 > bundle`
+  concatenate `$ cat file1 file2 file3 > combine_file`
 - ## [split](https://www.ss64.com/bash/split.html)
   split file by 10 lines each `$ split -l 10 parentFile childFile`
+
+## The all-powerful sed cmd
+
+- ## [sed](https://ss64.com/bash/sed.html)
+  Stream editor ( **_check `$ info sed` for other usage_** )
+  - substitute `$ sed 's/original/replacement/g' file`  
+    `/g` = global flag
+    delete empty lines `$ sed '/^.$/d' file` (might not work)
+  - use --in-place (or -i) flag to save the file `$ sed -i 's/original/replacement/g' file`
+  - can also be written as
+    - delete by line numbers: `$ sed '20d' file` and `$ sed '20,25d' file`
+    - delete by regex `$ sed '/^foobar/d' file`
