@@ -1,4 +1,4 @@
-# Linux cmds cheat sheet
+# Linux cmds cheat sheet - system utilities
 
 ## Zip and compression
 
