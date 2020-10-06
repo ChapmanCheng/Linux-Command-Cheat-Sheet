@@ -61,18 +61,6 @@
   switch user `$ su - username` or switch to root `$ su -`
   and super user do `$ sudo apt update`
 
-- ## [whoami](https://www.ss64.com/bash/whoami.html)
-
-  show your user name, i.e. root
-
-- ## [hosthame](https://linux.die.net/man/1/hostname)
-
-  show or set the system's host name
-
-- ## [pwd](https://ss64.com/bash/pwd.html)
-
-  Print Working Directory
-
 ## Communications between users
 
 - ## [users](https://www.ss64.com/bash/users.html)
