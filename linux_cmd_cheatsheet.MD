@@ -14,6 +14,33 @@
 
   change file group ownership
 
+- ## [useradd](https://ss64.com/bash/useradd.html) (**_root only_**)
+
+  add new user
+
+- ## [usermod](https://ss64.com/bash/usermod.html) (**_root only_**)
+
+  modify a user
+
+- ## [userdel](https://ss64.com/bash/userdel.html) (**_root only_**)
+
+  delete a user
+
+- ## [groupadd](https://ss64.com/bash/groupadd.html) (**_root only_**)
+
+  add new group
+
+- ## [groupdel](https://ss64.com/bash/groupdel.html) (**_root only_**)
+
+  delete a group
+
+- ## [su](https://ss64.com/bash/su.html) and [sudo](https://ss64.com/bash/sudo.html)
+
+  switch user `$ su - anotherUser`
+  and super user do `$ sudo apt update`
+
+- ## [id](https://ss64.com/bash/id.html)
+
 ## Access Control List (ACL)
 
 permission mechanism for file system
