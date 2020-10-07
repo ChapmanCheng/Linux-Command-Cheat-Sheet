@@ -41,6 +41,14 @@
 
 ## Shell Scripts Syntax
 
+- ## functions
+
+  ```
+  function_name () {
+    # list of commands
+  }
+  ```
+
 - ## case statement (switch statment)
 
   ```
@@ -77,7 +85,7 @@
 
   ### File test Operators
 
-  | operators | meaning                                                                              |
+  | operators | description                                                                          |
   | :-------: | ------------------------------------------------------------------------------------ |
   |    -e     | file exists                                                                          |
   |    -a     | file exists                                                                          |
@@ -107,7 +115,7 @@
 
   ### Integers Operators
 
-  | operators | meaning                                                     |
+  | operators | description                                                 |
   | :-------: | ----------------------------------------------------------- |
   |    -eq    | is equal to                                                 |
   |    -ne    | is not equal to                                             |
@@ -122,7 +130,7 @@
 
   ### String Operators
 
-  | operators | meaning                                               |
+  | operators | description                                           |
   | :-------: | ----------------------------------------------------- |
   |     =     | is equal to                                           |
   |    ==     | is equal to (**behaves differently**)                 |
@@ -143,3 +151,21 @@
     `/home/user/.bashrc`
   - global alias  
     `/etc/bashrc/`
+
+- ## Substitute
+  |     escape     | description                                                                                                      |
+  | :------------: | ---------------------------------------------------------------------------------------------------------------- |
+  |       \\       | backslash                                                                                                        |
+  |       a        | alert (BEL)                                                                                                      |
+  |       b        | backspace                                                                                                        |
+  |       c        | suppress trailing newline                                                                                        |
+  |       f        | form feed                                                                                                        |
+  |       n        | new line                                                                                                         |
+  |       r        | carriage return                                                                                                  |
+  |       t        | horizontal tab                                                                                                   |
+  |       v        | vertical tab                                                                                                     |
+  |     {var}      | Substitute the value of var.                                                                                     |
+  |  {var:-word}   | If var is null or unset, word is substituted for var. <br>The value of var does not change.                      |
+  |  {var:=word}   | If var is null or unset, var is set to the value of word.                                                        |
+  | {var:?message} | If var is null or unset, message is printed to standard error. <br>This checks that variables are set correctly. |
+  |  {var:+word}   | If var is set, word is substituted for var. <br>The value of var does not change.                                |
