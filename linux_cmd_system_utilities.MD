@@ -45,15 +45,53 @@
 ## Process and jobs
 
 - ## [systemctl](https://www.ss64.com/bash/systemctl.html)
+
+  System Control
+
+  - start/stop service
+    - `$ systemctl start service-name`
+    - `$ systemctl stop service-name`
+    - `$ systemctl restart service-name`
+  - start/stop service at boot-time
+    - `$ systemctl enable service-name`
+    - `$ systemctl disable service-name`
+  - show service current status `$ systemctl status service-name`
+
 - ## [ps](https://www.ss64.com/bash/ps.html)
+
+  list running process
+
+  - dunno the functions `$ ps -ef`
+
 - ## [kill](https://www.ss64.com/bash/kill.html)
+
+  kill a process `$ kill 1234` with a given PID (process ID)
+
+  ##### (similar to `$ systemctl stop service`)
+
 - ## [killall](https://www.ss64.com/bash/killall.html)
+
+  kill all process under the same service `$ killall firefox`
+
 - ## [top](https://www.ss64.com/bash/top.html)
+
+  display process and computer status
+
 - ## [at](https://www.ss64.com/bash/at.html)
 
 ## Cronjobs
 
 - ## [crontab](https://www.ss64.com/bash/crontab.html)
+  edit a cronjob `$ crontab -e ` to enter a vi editor  
+  list all cronjob `$ crontab -l`
+  ##### get instruction from [crontab guru](https://crontab.guru/) or any other sites
+- ## do hourly / daily / weekly / monthly cronjobs
+
+  go to `/etc/cron.daily || cron.hourly || cron.weekly || cron.monthly`, add scripts to create conjob
+
+  ##### daily/weekly/monthly store in `/etc/anacrontab`
+
+  ##### hourly store in `/etc/cron.d/anacron`
 
 ## System Monitoring
 
