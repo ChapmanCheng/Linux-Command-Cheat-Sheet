@@ -48,25 +48,6 @@ permission mechanism for file system
 - ## setfacl
 - ## getfacl
 
-## SSH (Secure shell)
-
-- ## [ssh](https://www.ss64.com/bash/ssh.html)
-  i.e. `ssh root@192.107.0.1`
-- ## [ssh-keygen](https://www.ss64.com/bash/ssh-keygen.html)
-  generate new key pairs in _~/.ssh/_
-- ## [ssh-add](https://www.ss64.com/bash/ssh-add.html)
-  add private keys to current computer after ssh-keygen
-- ## [scp](https://www.ss64.com/bash/scp.html)
-  secure shell _copy_
-
-## Show Files
-
-- ## [cat](https://www.ss64.com/bash/cat.html)
-- ## [head](https://www.ss64.com/bash/head.html)
-  to show 5 lines `head -5` or `head -n 5`
-- ## [tail](https://www.ss64.com/bash/tail.html)
-  to show 5 lines `tail -5` or `tail -n 5`
-
 ## Filters
 
 - ## [cut](https://www.ss64.com/bash/cut.html)
