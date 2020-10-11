@@ -142,6 +142,21 @@
 
 ## System Monitoring
 
+## Log Monitoring
+
+- Log Directory Location `$ cd /var/log`
+- `/var/log/boot.log` show bootup log files
+- chronyd (replacement of NTP services)
+- `/var/log/message` show
+  <span style="color: red;">
+  !!! all hardware/software/application/prcoess infos
+  <span>
+- `/var/log/cron` show executed cronjogs
+- `/var/log/dmesg` show error message, same as `$ dmesg`
+- `/var/log/maillog` show send/receive mails logs, good for troubleshooting
+- `/var/log/secure` show users logged in, failed logged in, and from where
+- `/var/log/httpd` show apache logs
+
 ## Zip and compression
 
 - ## [tar](https://www.ss64.com/bash/tar.html)
