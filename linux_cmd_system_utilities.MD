@@ -142,15 +142,42 @@
 
 ## System Monitoring
 
+## System Maintenence
+
+- ## shutdown
+  use `$ shutdown now` for immediate shutdown
+- ## init [1..6]
+  run `$ man init` for more info
+- ## reboot
+  alias to `$ shutdown -r`
+- ## halt
+  alias to `$ shutdown -H`
+- ## [hostnamectl](https://www.ss64.com/bash/hostnamectl.html)
+  set a new hostname to computer `$ hostnamectl set-hostname NEWNAME`  
+  or edit in `/etc/hostname`
+
+## System Information
+
+you can find system information in `$ cat /etc/os-release` or `$ cat /etc/redhat-release` etc.
+
+- ## [uname](https://www.ss64/bash/uname.html)
+
+  print system information  
+  print all with `$ uname -a`
+
+- ## [dmidecode](https://www.ss64/bash/dmidecode.html)
+
+  prints super detail information w/ bios `$ sudo dmidecode`
+
+- ## [arch](https://www.ss64/bash/arch.html)
+  show system architecture
+
 ## Log Monitoring
 
 - Log Directory Location `$ cd /var/log`
 - `/var/log/boot.log` show bootup log files
 - chronyd (replacement of NTP services)
-- `/var/log/message` show
-  <span style="color: red;">
-  !!! all hardware/software/application/prcoess infos
-  <span>
+- `/var/log/message` show <span style="color: red;"> !!! all hardware/software/application/prcoess infos <span>
 - `/var/log/cron` show executed cronjogs
 - `/var/log/dmesg` show error message, same as `$ dmesg`
 - `/var/log/maillog` show send/receive mails logs, good for troubleshooting
