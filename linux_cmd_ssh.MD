@@ -25,7 +25,7 @@
   > [command line options](https://www.ssh.com/ssh/keygen/#command-and-option-summary),
   > [keys and algorithms](https://www.ssh.com/ssh/keygen/#choosing-an-algorithm-and-key-size)
 
-- ## [ssh-copy-id](https://www.ssh.com/ssh/copy-id)
+- ## [ssh-copy-id](https://www.ssh.com/ssh/copy-id) or put public key in remote servers
 
   install public key to the server as authorized key  
    `$ ssh-copy-id -i ~/.ssh/id_rsa user@host`  
@@ -56,10 +56,6 @@
 - ## sftp
 
   just use **_scp_**
-
-- ## put public key in remote servers
-
-  append your keys in `$cat id_rsa.pub >> ~/.ssh/authorized_keys`
 
 - ## remote files permissions
 
