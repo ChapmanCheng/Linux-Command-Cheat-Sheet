@@ -173,6 +173,14 @@ you can find system information in `$ cat /etc/os-release` or `$ cat /etc/redhat
 - ## [arch](https://www.ss64/bash/arch.html)
   show system architecture
 
+## Environment variables
+
+- ## to view all env `$ printenv` or `$ env`
+- ## to view one env `$ echo $SHELL`
+- ## set a env variable in this session `$ export MY_VAR=foobar`
+- ## set user variable permanantly in `~/.bashrc` file
+- ## set global variable permanantly in `/etc/profile` or `/etc/bashrc` file
+
 ## Other
 
 - ## `clear` - clears your screen
