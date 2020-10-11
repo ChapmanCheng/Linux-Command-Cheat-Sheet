@@ -156,14 +156,14 @@
   |     escape     | description                                                                                                      |
   | :------------: | ---------------------------------------------------------------------------------------------------------------- |
   |       \\       | backslash                                                                                                        |
-  |       a        | alert (BEL)                                                                                                      |
-  |       b        | backspace                                                                                                        |
-  |       c        | suppress trailing newline                                                                                        |
-  |       f        | form feed                                                                                                        |
-  |       n        | new line                                                                                                         |
-  |       r        | carriage return                                                                                                  |
-  |       t        | horizontal tab                                                                                                   |
-  |       v        | vertical tab                                                                                                     |
+  |       \a       | alert (BEL)                                                                                                      |
+  |       \b       | backspace                                                                                                        |
+  |       \c       | suppress trailing newline                                                                                        |
+  |       \f       | form feed                                                                                                        |
+  |       \n       | new line                                                                                                         |
+  |       \r       | carriage return                                                                                                  |
+  |       \t       | horizontal tab                                                                                                   |
+  |       \v       | vertical tab                                                                                                     |
   |     {var}      | Substitute the value of var.                                                                                     |
   |  {var:-word}   | If var is null or unset, word is substituted for var. <br>The value of var does not change.                      |
   |  {var:=word}   | If var is null or unset, var is set to the value of word.                                                        |
