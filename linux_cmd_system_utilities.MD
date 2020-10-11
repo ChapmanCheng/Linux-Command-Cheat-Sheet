@@ -140,8 +140,6 @@
 
   ##### hourly store in `/etc/cron.d/anacron`
 
-## System Monitoring
-
 ## System Maintenence
 
 - ## shutdown
@@ -155,6 +153,9 @@
 - ## [hostnamectl](https://www.ss64.com/bash/hostnamectl.html)
   set a new hostname to computer `$ hostnamectl set-hostname NEWNAME`  
   or edit in `/etc/hostname`
+- ## Recover root password
+  [check video](https://udemy.com/course/complete-linux-training-course-to-get-your-dream-it-job/learn/lecture/9848206)
+- ## [sosreport](https://access.redhat.com/solutions/3592) <span style="color: red;">Redhat only</span>
 
 ## System Information
 
@@ -171,6 +172,14 @@ you can find system information in `$ cat /etc/os-release` or `$ cat /etc/redhat
 
 - ## [arch](https://www.ss64/bash/arch.html)
   show system architecture
+
+## Other
+
+- ## `clear` - clears your screen
+- ## `exit` - exit shell/terminal session
+- ## [script](https://www.ss64.com/bash/script.html)
+  record a log of your inputs in the terminal session `$ script FILENAME.log`  
+  to exit, use `$ exit` to get out of the concurrent job
 
 ## Log Monitoring
 
