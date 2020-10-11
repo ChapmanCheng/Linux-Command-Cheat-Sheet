@@ -57,27 +57,74 @@
     - `$ systemctl disable service-name`
   - show service current status `$ systemctl status service-name`
 
-- ## [ps](https://www.ss64.com/bash/ps.html)
+- ## Display Process
 
-  list running process
+  - ## [ps](https://www.ss64.com/bash/ps.html)
 
-  - dunno the functions `$ ps -ef`
+    list running process
 
-- ## [kill](https://www.ss64.com/bash/kill.html)
+    - dunno the functions `$ ps -ef`
 
-  kill a process `$ kill 1234` with a given PID (process ID)
+  - ## [top](https://www.ss64.com/bash/top.html)
 
-  ##### (similar to `$ systemctl stop service`)
+    display process and computer status
 
-- ## [killall](https://www.ss64.com/bash/killall.html)
+  - ## [df](https://www.ss64.com/bash/df.html)
 
-  kill all process under the same service `$ killall firefox`
+    show disk usage `$ df -h` with human readable memory size
 
-- ## [top](https://www.ss64.com/bash/top.html)
+  - ## [dmseg](https://www.ss64.com/bash/dmseg.html)
 
-  display process and computer status
+    show system error messages
 
-- ## [at](https://www.ss64.com/bash/at.html)
+  - ## iostat <span style="color: red;"> \* not support on 20.04 </span>
+    show input and ouput stats  
+    to refresh the stat every one second `$iostat 1`
+  - ## netstat <span style="color: red;"> \* not support on 20.04 </span>
+    show network information `$ netstat -rnv`
+  - ## free
+    show ram memroy
+  - ## read cpu info - `cat /proc/cpuinfo`
+  - ## read memory info - `cat /proc/meminfo`
+
+- ## Kill Process
+
+  - ## [kill](https://www.ss64.com/bash/kill.html)
+
+    kill a process `$ kill 1234` with a given PID (process ID)
+
+    ##### (similar to `$ systemctl stop service`)
+
+  - ## [killall](https://www.ss64.com/bash/killall.html)
+
+    kill all process under the same service `$ killall firefox`
+
+  - ## [pkill](https://www.ss64.com/bash/pkill.html)
+
+    kill process by name `pkill top`
+
+- ## Background and Foreground and Priority
+
+  - ## [jobs](https://www.ss64.com/bash/jobs.html)
+
+    show current jobs in terminal session
+
+  - ## [fg](https://www.ss64.com/bash/fg.html)
+
+    push _job_ to **Foreground** `$ fg PID` or `$ fg`
+
+  - ## [bg](https://www.ss64.com/bash/bg.html)
+
+    move _job_ to **Background** `$ bg PID` or `$ bg`
+
+  - ## [nice](https://www.ss64.com/bash/nice.html)
+
+    process priority `$nice -n 5 PROCESS`
+    or just get a better computer
+
+- ## [nohup](https://www.ss64.com/bash/nohup.html)
+
+  don't stop process even after terminal closed `$ nohup COMMAND &`
 
 ## Cronjobs
 
