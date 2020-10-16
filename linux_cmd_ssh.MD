@@ -57,6 +57,13 @@
 
   just use **_scp_**
 
+- ## [rsync](https://linux.die.net/man/1/rsync)
+
+  another scp command
+  usage
+
+  - copy
+
 - ## remote files permissions
 
   `~/.ssh/` is set as _drwx------_ (700)  
