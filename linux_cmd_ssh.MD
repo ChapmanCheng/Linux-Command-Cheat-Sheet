@@ -60,9 +60,8 @@
 - ## [rsync](https://linux.die.net/man/1/rsync)
 
   another scp command
-  usage
 
-  - copy
+  - copy to `$ rsync /source/file.txt `
 
 - ## remote files permissions
 
