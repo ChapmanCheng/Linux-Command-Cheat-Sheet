@@ -1,0 +1,27 @@
+{
+  "name": "linux_cmd_cheat_sheet",
+  "version": "1.0.0",
+  "description": "Linux command cheat sheets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier -w *.MD"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChapmanCheng/linux_cmd_cheat_sheet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChapmanCheng/linux_cmd_cheat_sheet/issues"
+  },
+  "homepage": "https://github.com/ChapmanCheng/linux_cmd_cheat_sheet#readme",
+  "devDependencies": {
+    "prettier": "^2.1.2"
+  },
+  "prettier": {
+    "parser": "markdown"
+  }
+}
