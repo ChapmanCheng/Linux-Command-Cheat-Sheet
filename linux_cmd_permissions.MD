@@ -45,10 +45,6 @@
 
   show list of last logged in users
 
-- ## [finger](https://ss64.com/bash/finger.html)
-
-  need to install...
-
 - ## [id](https://ss64.com/bash/id.html)
 
   show your user's id and group id `$ id`  
